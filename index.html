@@ -17,23 +17,29 @@
 <body>
     <div class="form-container">
         <h2 class="form-title">Contact Form</h2>
-        <form>
+        <form id="cF">
             <div class="form-group">
                 <label for="name">Name</label>
                 <input type="text" id="name" name="name" required>
+                <span id="nameError" class="error-message"></span>
             </div>
             <div class="form-group">
                 <label for="email">Email</label>
                 <input type="email" id="email" name="email" required>
+                <span id="emailError" class="error-message"></span>
             </div>
             <div class="form-group">
                 <label for="phone">Phone Number</label>
                 <input type="tel" id="phone" name="phone" required>
+                <span id="phoneError" class="error-message"></span>
             </div>
             <div class="button-container">
-                <button type="submit">Submit</button>
+                <button type="submit">Submit <i class="fa-regular fa-paper-plane"></i></button>
             </div>
         </form>
     </div>
+
+    <!-- Custom JS -->
+    <script src="scripts.js"></script>
 </body>
 </html>

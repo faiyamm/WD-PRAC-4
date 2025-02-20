@@ -8,8 +8,6 @@
     --primary-color: #8a8de1;
     --secondary-color: #6a207b;
     --font-family: "Jost", serif;
-    --max-width: 1200px;
-    --min-height: 120vh;
 }
 
 * {
@@ -27,7 +25,7 @@ body {
     justify-content: center;
     align-items: center;
     padding: 1rem;
-                        margin-top: 5.5rem;
+    margin-top: 5.5rem;
 }
 
 /*-----Contact box aesthetics-----*/
@@ -84,13 +82,30 @@ button {
     font-size: 1rem;
     border: none;
     border-radius: 0.5rem;
+    margin-top: 1rem;
     cursor: pointer;
     background-color: var(--secondary-color);
     color: var(--text-color);
 }
 
+button:hover {
+    background-color: var(--primary-color);
+}
+
+/*-----Error messages highlight-----*/
+.error-message {
+    color: red;
+    font-size: 0.8rem;
+    margin-top: 0.5rem;
+}
+
+input.error {
+    border: 2px solid red;
+}
+
+/*-----Responsive-----*/
 @media (max-width: 480px) {
-            .form-container {
-                padding: 1.5rem;
-            }
-        }
+    .form-container {
+        padding: 1.5rem;
+    }
+}
